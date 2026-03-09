@@ -27,8 +27,8 @@ body{
 }
 
 .input-city{
-    display: flex;
-    gap: 10px;
+    display:flex;
+    flex-direction:column;
     margin-bottom: 20px;
 }
 
@@ -72,3 +72,21 @@ body{
 .container:hover{
     transform:translateY(-5px);
 }
+
+#weather-icon {
+    display: none;
+}
+
+.searchbox{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.searchbox input{
+    padding: 10px;
+    width: 200px;
+}
+

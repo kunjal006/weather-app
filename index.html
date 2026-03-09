@@ -20,21 +20,25 @@
         <!-- city input -->
         <div class="input-city">
             <p>City</p>
-            <input id="cityinput" type="text" placeholder="Enter city name">
-            <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <div class="searchbox">
+                <input id="cityinput" type="text" placeholder="Enter city name">
+                <button id="location-btn" type="button">Use My Location</button>
+                <button id="button" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
         </div>
 
         <!-- result display -->
-        <div class="display">
+        <div class="display" style="display:none;">
             <h2 id="cityname">City Name</h2>
+            <img id="weather-icon" src="" alt="weather icon">
             <!-- temperature -->
             <div class="temp">
                 <i class="fa-solid fa-temperature-full"></i>
-                <p id="temper">Temperature: 28°C</p>
+                <p id="temper">Temperature: </p>
             </div>
             <!-- condition -->
             <div class="cond">
-                <p id="condition">Weather Condition: Cloudy</p>
+                <p id="condition">Weather Condition: </p>
             </div>
             <!-- humidity -->
             <div class="hum">
