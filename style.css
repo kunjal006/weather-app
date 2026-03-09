@@ -1,14 +1,15 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
-    height: 70vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background:linear-gradient(135deg,#74ebd5,#ACB6E5)
+    background:linear-gradient(135deg,#74ebd5,#ACB6E5);
 }
 
 .container{
@@ -17,6 +18,7 @@ body{
     border-radius: 15px;
     width: 320px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    transition:0.3s;
 }
 
 .container h2{
@@ -65,10 +67,6 @@ body{
 .hum,
 .wind{
     margin:6px 0;
-}
-
-.container{
-    transition:0.3s;
 }
 
 .container:hover{
