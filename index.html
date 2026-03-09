@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Info</title>
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- display container -->
+    <div class="container">
+        <h2>Weather Now</h2>
+    <form>  <!-- form -->
+
+        <!-- city input -->
+        <div class="input-city">
+            <p>City</p>
+            <input id="cityinput" type="text" placeholder="Enter city name">
+            <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <!-- result display -->
+        <div class="display">
+            <h2 id="cityname">City Name</h2>
+            <!-- temperature -->
+            <div class="temp">
+                <i class="fa-solid fa-temperature-full"></i>
+                <p id="temper">Temperature: 28°C</p>
+            </div>
+            <!-- condition -->
+            <div class="cond">
+                <p id="condition">Weather Condition: Cloudy</p>
+            </div>
+            <!-- humidity -->
+            <div class="hum">
+                <p id="humidity">Humidity: </p>
+            </div>
+            <!-- wind -->
+            <div class="wind">
+                <p id="wind-speed">Wind Speed: </p>
+            </div>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
